@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TIMER</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="container">
+         <div class="themes">
+            <label><input type="radio" name="theme" value="light" checked>
+               <div class="lng-light">light</div>
+            </label>
+            <label><input type="radio" name="theme" value="dark">
+               <div class="lng-dark">dark</div>
+            </label>
+         </div>
+         <select class="select">
+            <option value="ru">ru</option>
+            <option value="en">en</option>
+            <option value="ua">ua</option>
+         </select>
+         <div class="timer">
+            <div class="timer__block">
+               <div class="time hour ">00</div>
+               <div class="title lng-hour">Hours</div>
+            </div>
+            <div class="timer__block">
+               <div class="time minute ">00</div>
+               <div class="title lng-minute">Minutes</div>
+            </div>
+            <div class="timer__block">
+               <div class="time second ">00</div>
+               <div class="title lng-second">Seconds</div>
+            </div>
+            <div class="timer__block">
+               <div class="time millisecond ">00</div>
+               <div class="title lng-millisecond">Milliseconds</div>
+            </div>
+         </div>
+         <div class="buttons">
+            <button class="button start lng-start">Start</button>
+            <button class="button pause lng-pause">Pause</button>
+            <button class="button stop lng-stop">Stop</button>
+            <button class="button new lng-new">New</button>
+         </div>
+      </div>
+
+      <div class="results__block">
+         <div class="results__title lng-results">Results</div>
+         <div class="results"></div>
+      </div>
+   </div>
+   <script src="js/lang.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
