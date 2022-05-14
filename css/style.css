@@ -66,10 +66,14 @@ h1, h2, h3, h4, h5, h6 {
 
 html.dark {
   --color-bg: url(../img/bk2.png);
+  --color-btn: rgb(61, 176, 143);
+  --color-stop: rgb(86, 208, 216);
 }
 
 html.light {
   --color-bg: url(../img/bk.png);
+  --color-btn: #e03b8bd0;
+  --color-stop: #2b64afa1;
 }
 
 body {
@@ -244,7 +248,7 @@ body {
 
 @media (max-width: 520px) {
   .timer__block .title {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -304,17 +308,26 @@ body {
   transition: all 0.3s;
 }
 
-.buttons .button.start, .buttons .button.stop {
+.buttons .button.start {
   color: #2987bec0;
 }
 
-.buttons .button.start:hover, .buttons .button.stop:hover {
+.buttons .button.start:hover {
   background-color: #2b64afa1;
   color: #fff;
 }
 
+.buttons .button.stop {
+  color: #2987bec0;
+}
+
+.buttons .button.stop:hover {
+  background-color: var(--color-stop);
+  color: #fff;
+}
+
 .buttons .button.pause:hover {
-  background-color: #e03b8bd0;
+  background-color: var(--color-btn);
   color: #fff;
 }
 
